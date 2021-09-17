@@ -1,9 +1,13 @@
+/* general styling */
 *,
 *::before,
 *::after{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+/* css variables */
 :root{
     --lightColor:#FCF6EE;
     --darkColor: #0d1b2a;
@@ -59,19 +63,16 @@ nav{display: none;}
     position: relative;
 }
 
+/* about me styling */
 .about_me{
     max-width: 1000px;
     margin: 0 auto;
-
+    background-color: var(--darkColor);
+    color: var(--lightColor);
 }
 
-@media (min-width: 800px) {
-    :root{
-        --fontSize-h1: 4.5rem;
-        --fontSize-h2: 3.75rem;
-        --fontSize-h3: 1.5rem;
-        --fontSize-body: 1.25rem;        
-    }
+.about_img{
+    max-width: 300px;
 }
 
 @media (min-width: 600px){
@@ -79,9 +80,9 @@ nav{display: none;}
         display: grid;
         width: min-content;
         margin: 0 auto;
-        grid-column-gap: 1em;
+        column-gap: 1em;
         grid-template-areas:
-            "image title"
+            "img title"
             "img subtitle";
         grid-template-columns: min-content max-content;
     }
@@ -96,7 +97,7 @@ nav{display: none;}
             "title img"
             "text img"
         ;
-        grid-column-gap: 2em;
+        column-gap: 2em;
     }
     .about_img{
         grid-row: 1/-1;
@@ -105,4 +106,72 @@ nav{display: none;}
    .section_title_about{
        grid-area: title;
    }
+}
+
+/* Portfolio Styling  */
+.work{
+    text-align: center;
+}
+
+.portfolio{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.portfolio_item{
+    background-color: var(--secondaryAccentColor);
+    overflow: hidden;
+}
+
+.portfolio_img{
+    transition: transform 750ms cubic-bezier(.5, 0, .5,1),
+    opacity 250ms linear;
+}
+
+.portfolio_img:hover{
+    transform: scale(1.2);
+    opacity: .75;
+}
+
+/* Footer Styling */
+footer{
+    background-color: var(--accentColor);
+    text-align: center;
+    padding: 30px;
+}
+
+/* Social Media icons */
+
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    color: var(--darkColor);
+  }
+
+  .fa-linkedin {
+    color: var(--darkColor);
+  }
+
+.fa-instagram {
+  color: var(--darkColor);
+}
+
+@media (min-width: 800px) {
+    :root{
+        --fontSize-h1: 4.5rem;
+        --fontSize-h2: 3.75rem;
+        --fontSize-h3: 1.5rem;
+        --fontSize-body: 1.25rem;        
+    }
 }

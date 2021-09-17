@@ -4,6 +4,8 @@ Link to Repo: https://github.com/lydiawdesign/Web_Development_Portfolio_Updated
 Link to Live Site: 
 
 ## Description: 
+A professional portfolio showcasing Lydia's most recent web development work. 
+
 
 ## Technologies Used: 
 
