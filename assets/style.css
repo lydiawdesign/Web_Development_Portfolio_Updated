@@ -4,44 +4,20 @@
     box-sizing: border-box;
 }
 
+:root{
+    --lightColor:#FCF6EE;
+    --darkColor: #0d1b2a;
+    --accentColor: #fbcaef;
+    --secondaryAccentColor: #aa6373;
+ 
+    --fontSize-h1: 3rem; 
+    --fontSize-h2: 2.25rem;
+    --fontSize-h3: 1.25rem;
+    --fontSize-body: 1rem;
+}
+
 html{
     font-family: 'Roboto', sans-serif;
-}
-
-:root{
-   --lightColor:#FCF6EE;
-   --darkColor: #0d1b2a;
-   --accentColor: #fbcaef;
-   --secondaryAccentColor: #aa6373;
-
-   --fontSize-h1: 3rem; 
-   --fontSize-h2: 2.25rem;
-   --fontSize-h3: 1.25rem;
-   --fontSize-body: 1rem;
-}
-
-@media (min-width: 800px) {
-    :root{
-        --fontSize-h1: 4.5rem;
-        --fontSize-h2: 3.75rem;
-        --fontSize-h3: 1.5rem;
-        --fontSize-body: 1.25rem;        
-    }
-}
-
-@media (min-width 600px){
-    .intro {
-        display: grid;
-        grid-column-gap: 1em;
-        grid-template-areas:
-            "image title"
-            "img subtitle";
-        grid-template-columns: min-content max-content;
-    }
-    .intro_img{
-        grid-area: img;
-        min-width: 250px;
-    }
 }
 
 body{
@@ -55,6 +31,7 @@ body{
 img{
     display: block;
     max-width: 100%;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 section{
@@ -68,27 +45,64 @@ h3{
     margin: 0;
 }
 
-h1 {font-size: var(--fontSize-h1)}
-h2 {font-size: var(--fontSize-h2)}
-h3 {font-size: var(--fontSize-h3)}
+h1 {font-size: var(--fontSize-h1)};
+h2 {font-size: var(--fontSize-h2)};
+h3 {font-size: var(--fontSize-h3)};
 
 .section_title{
     margin-bottom: .45em;
-}
-
-.section_subtitle{
-    margin: 0;
-    font-size: var(--fontSize-h3);
-}
-
-.section_subtitle_intro{
-    background-color: var(--secondaryAccentColor);
-    margin: 1em;
 }
 
 nav{display: none;}
 
 .intro{
     position: relative;
+}
 
+.about_me{
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+@media (min-width: 800px) {
+    :root{
+        --fontSize-h1: 4.5rem;
+        --fontSize-h2: 3.75rem;
+        --fontSize-h3: 1.5rem;
+        --fontSize-body: 1.25rem;        
+    }
+}
+
+@media (min-width: 600px){
+    .intro {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas:
+            "image title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+    .intro_img{
+        grid-area: img;
+        min-width: 250px;
+    }
+    .about_me{
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-areas:
+            "title img"
+            "text img"
+        ;
+        grid-column-gap: 2em;
+    }
+    .about_img{
+        grid-row: 1/-1;
+        grid-column: 2;
+    }
+   .section_title_about{
+       grid-area: title;
+   }
 }
