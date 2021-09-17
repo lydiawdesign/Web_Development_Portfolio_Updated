@@ -1,3 +1,79 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
 html{
     font-family: 'Roboto', sans-serif;
+}
+
+:root{
+   --lightColor:#f3d9b1;
+   --darkColor: #0d1b2a;
+   --accentColor: #fbcaef;
+   -secondaryAccentColor: #aa6373;
+
+   --fontSize-h1: 3rem; 
+   --fontSize-h2: 2.25rem;
+   --fontSize-h3: 1.25rem;
+   --fontSize-body: 1rem;
+}
+
+@media (min-width: 800px) {
+    :root{
+        --fontSize-h1: 4.5rem;
+        --fontSize-h2: 3.75rem;
+        --fontSize-h3: 1.5rem;
+        --fontSize-body: 1.25rem;        
+    }
+}
+
+body{
+    background-color: var(--lightColor);
+    color: var(--darkColor);
+    margin: 0;
+    font-size: var(--fontSize-body);
+    line-height: 1.6;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+section{
+    padding: 5em 2em;
+}
+
+h1,
+h2,
+h3{
+    line-height: 1;
+    margin: 0;
+}
+
+h1 {font-size: var(--fontSize-h1)}
+h2 {font-size: var(--fontSize-h2)}
+h3 {font-size: var(--fontSize-h3)}
+
+.section_title{
+    margin-bottom: .45em;
+}
+
+.section_subtitle{
+    margin: 0;
+    font-size: var(--fontSize-h3);
+}
+
+.section_subtitle_intro{
+    background-color: var(--accentColor);
+    margin: 1em;
+}
+
+nav{display: none;}
+
+.intro{
+    position: relative;
+
 }

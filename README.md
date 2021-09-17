@@ -9,5 +9,8 @@ Link to Live Site:
 
 ## Screenshots :
 
+
+Credit to Kevin Powell's course.
+
 Copyright (c) 2021 Lydia Williamson
 Contact: lydiawdesign@gmail.com
