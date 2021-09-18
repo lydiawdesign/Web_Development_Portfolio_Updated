@@ -9,6 +9,8 @@ A professional portfolio showcasing Lydia's most recent web development work.
 
 ## Technologies Used: 
 
+HTML, CSS, Google Fonts, Bootstrap, 
+
 ## Screenshots :
 
 

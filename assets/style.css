@@ -3,8 +3,6 @@
 *::before,
 *::after{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 /* css variables */
@@ -59,11 +57,40 @@ h3 {font-size: var(--fontSize-h3)};
 
 /* nav styling */
 
+.navbar{
+    background-color: var(--darkColor);
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 20px;
+}
 
 
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--lightColor);
+    padding: 8px 25px;;
+}
+
+.navbar ul li a:hover{
+    background-color: var(--accentColor);
+    color: var(--lightColor); 
+    box-shadow: 0 0 5px black;
+}
+
+/* intro styling */
 .intro{
     position: relative;
 }
+
+
 
 /* about me styling */
 .about_me{
@@ -154,6 +181,10 @@ footer a{
     text-decoration: underline;
 }
 
+.footer_title{
+    margin-bottom: .5em;
+}
+
 /* Social Media icons */
 
 .fa {
@@ -175,10 +206,6 @@ footer a{
   .fa-instagram,
   .fa-github {
     color: var(--darkColor);
-}
-
-.footer_title{
-    margin-bottom: .5em;
 }
 
 .social_list{
