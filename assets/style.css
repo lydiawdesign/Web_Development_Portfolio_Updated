@@ -63,33 +63,10 @@ h3 {font-size: var(--fontSize-h3)};
     max-width: 300px;
 }
 
-  
-
 /* Portfolio Styling  */
-.work{
-    text-align: center;
-}
 
-.portfolio{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    margin: 0;
-    max-width: 1600px;
-}
-
-.portfolio_item{
-    background-color: var(--darkColor);
-    overflow: hidden;
-}
-
-.portfolio_img{
-    transition: transform 750ms cubic-bezier(.5, 0, .5,1),
-    opacity 250ms linear;
-}
-
-.portfolio_img:hover{
-    transform: scale(1.1);
-    opacity: .75;
+#background-portfolio{
+    background-color: var(--darkColor) !important;
 }
 
 /* Footer Styling */
@@ -107,6 +84,7 @@ footer a{
 
 .footer_link:hover {
     text-decoration: underline;
+    color: var(--darkColor)
 }
 
 
@@ -139,26 +117,3 @@ footer a{
     margin: .1em 0;
     padding: 0;
 }
-
-@media (min-width: 800px) {
-    :root{
-        --fontSize-h1: 4.5rem;
-        --fontSize-h2: 3.75rem;
-        --fontSize-h3: 1.5rem;
-        --fontSize-body: 1.25rem;        
-    }
-}
-
-@media (min-width: 40em) {
-  
-    .featurette-heading {
-      font-size: 50px;
-    }
-  }
-  
-  @media (min-width: 62em) {
-    .featurette-heading {
-      margin-top: 7rem;
-    }
-}
-  
