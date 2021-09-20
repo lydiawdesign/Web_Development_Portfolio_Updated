@@ -50,8 +50,8 @@ h1 {font-size: var(--fontSize-h1)};
 h2 {font-size: var(--fontSize-h2)};
 h3 {font-size: var(--fontSize-h3)};
 
-.section_title{
-    margin-bottom: .45em;
+.headers{
+    font-size: 200%;
 }
 
 /* nav styling done with bootstrap*/
@@ -63,12 +63,6 @@ h3 {font-size: var(--fontSize-h3)};
     max-width: 300px;
 }
 
-.about-heading {
-    font-weight: 300;
-    line-height: 1;
-    /* rtl:remove */
-    letter-spacing: -.05rem;
-}
   
 
 /* Portfolio Styling  */
@@ -115,9 +109,6 @@ footer a{
     text-decoration: underline;
 }
 
-.footer_title{
-    margin-bottom: .5em;
-}
 
 /* Social Media icons */
 
