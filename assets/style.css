@@ -20,12 +20,15 @@
 
 html{
     font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0;
 }
 
 body{
     background-color: var(--lightColor);
     color: var(--darkColor);
     margin: 0;
+    height: 100%;
     font-size: var(--fontSize-body);
     line-height: 1.6;
     padding-top: 3rem;
@@ -56,9 +59,36 @@ h3 {font-size: var(--fontSize-h3)};
 /* nav styling done with bootstrap*/
 
 /* hero styling */
-.hero-image{
-    min-height: 700px;
-}
+.hero-image {
+    background-image: url("https://www.pexels.com/photo/down-angle-photography-of-red-clouds-and-blue-sky-844297/");
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
 
 /* about styling */
 .about-img{
