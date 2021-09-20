@@ -29,7 +29,6 @@ body{
     font-size: var(--fontSize-body);
     line-height: 1.6;
     padding-top: 3rem;
-    padding-bottom: 3rem;
 }
 
 
@@ -57,24 +56,27 @@ h3 {font-size: var(--fontSize-h3)};
 /* nav styling done with bootstrap*/
 
 /* hero styling */
+.hero-image{
+    min-height: 700px;
+}
 
 /* about styling */
 .about-img{
     max-width: 300px;
 }
 
-/* Portfolio Styling  */
-
-#background-portfolio{
-    background-color: var(--darkColor) !important;
+.about-background{
+    background-color: var(--accentColor) !important;
 }
+
+/* Portfolio Styling  */
 
 /* Footer Styling */
 footer{
-    background-color: var(--accentColor);
+    background-color: var(--darkColor);
     text-align: center;
     padding: 2.5em 0;
-    color: var(--darkColor);
+    color: var(--accentColor);
 }
 
 footer a{
@@ -92,7 +94,7 @@ footer a{
 
 .fa {
     padding: 20px;
-    font-size: 20px;
+    font-size: 40px;
     width: 50px;
     text-align: center;
     text-decoration: none;
@@ -108,7 +110,7 @@ footer a{
   .fa-linkedin,
   .fa-instagram,
   .fa-github {
-    color: var(--darkColor);
+    color: var(--accent);
 }
 
 .social_list{
