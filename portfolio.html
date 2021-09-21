@@ -1,45 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lydia Williamson Portfolio</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-        <link rel="stylesheet" href="/assets/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <nav class="navbar">
-            <ul>
-                <li> <a href= "#home">Home</a></li>
-                <li> <a href= "#about">About</a></li>
-                <li> <a href= "#portfolio">Portfolio</a></li>
-                <li> <a href= "#contact">Contact</a></li>
-            </ul>
-        </nav>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Lydia Williamson Portfolio</title>
+      <!-- bootstrap 5 -->        
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <!-- custom css -->
+      <link rel="stylesheet" href="/assets/style.css">
+        <!-- google font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+        <!-- font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 
-        <section>
-            <h1 class="project_title">Groovy Movie</h1>
-            <p class="project_body">short description</p>
-            <form action="https://github.com/lydiawdesign/Movie-Picker-App">
-                <input type="submit" value="Check out on GitHub" />
-            </form>
-        </section>
-        
-        <footer>
-            <h2 class="footer_title" id="contact">Get In Touch</h2>
-            <a href="mailto:lydiawdesign@gmail.com" class="footer_link">lydiawdesign@gmail.com</a>
+  <body>
+      <!-- nav section -->
+      <div class="container">
+          <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+              <a class="navbar-brand" href="#home">
+                  <span class="hidden fw-bold fs-3 ps-5 text-uppercase">Lydia Williamson</span>
+                </a>
+              <button 
+                  class="navbar-toggler pe-4" 
+                  type="button" 
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#toggleMobileMenu" 
+                  aria-controls="toggleMobileMenu" 
+                  aria-expanded="false" 
+                  aria-label="Toggle navigation"
+              >
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse pe-5" id="toggleMobileMenu">
+              
+                  <ul class="navbar-nav ms-auto text-center">
+                      <li>
+                          <a class="nav-link fw-bold text-uppercase" href="#home">Home</a>
+                      </li>
+                      <li>
+                          <a class="nav-link fw-bold text-uppercase" href="#about">About</a>
+                      </li>
+                      <li>
+                          <a class="nav-link fw-bold text-uppercase" href="#portfolio">Projects</a>
+                      </li>
+                      <li>
+                          <a class="nav-link fw-bold text-uppercase" href="#contact">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
 
-            <div class="social_list"></div>
-                <a href="https://github.com/lydiawdesign" class="fa fa-github"></a>
-                <a href="https://www.facebook.com/lydia.williamson.71" class="fa fa-facebook"></a>
-                <a href="www.linkedin.com/in/lydia-williamson" class="fa fa-linkedin"></a>
-                <a href="https://www.instagram.com/lydia.artistpage/" class="fa fa-instagram"></a>
+      <!-- post section -->
+      <div class="container py-5">
+        <div>
+          <h1 class="headers pb-4 text-center text-uppercase fs-1 fw-bold">Groovy Movie</h1>
+        </div>
+
+        <img src="./images/Groovy Movie Index Screenshot.jpg" alt="main groovy movie screenshot" class="img-fluid mx-auto d-block my-sm-5 my-2 w-auto">
+        <section id="content" class="border-bottom mb-4">
+          <p class= "fs-4"><strong>Optio sapiente molestias consectetur?</strong></p>
+          
+          <p class= "fs-4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+            sapiente molestias consectetur. Fuga nulla officia error placeat
+            veniam, officiis rerum laboriosam ullam molestiae magni velit
+            laborum itaque minima doloribus eligendi! Lorem ipsum, dolor sit
+            amet consectetur adipisicing elit. Optio sapiente molestias
+            consectetur. Fuga nulla officia error placeat veniam, officiis
+            rerum laboriosam ullam molestiae magni velit laborum itaque
+            minima doloribus eligendi!
+          </p>
+
+          <p class= "fs-4"><strong>Optio sapiente molestias consectetur?</strong></p>
+
+          <p class= "fs-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            architecto ex ab aut tempora officia libero praesentium, sint id
+            magnam eius natus unde blanditiis. Autem adipisci totam sit
+            consequuntur eligendi.
+          </p>
+
+          <p class= "fs-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Temporibus, libero repellat molestiae aperiam laborum aliquid
+            atque magni nostrum, inventore perspiciatis possimus quia
+            incidunt maiores molestias eaque nam commodi! Magnam, labore.
+          </p>
+
+          <div class="text-center p-5">
+            <a href="https://lydiawdesign.github.io/Movie-Picker-App/" class="btn btn-dark btn-lg">See Live Demo</a>
+            <a href="https://github.com/lydiawdesign/Movie-Picker-App" class="btn btn-dark btn-lg">See GitHub Project</a>
           </div>
-        </footer>
-    </body>
+
+        </div>
+
+      <footer>
+        <h2 class="footer_title headers pb-4 text-uppercase fs-1 fw-bold" id="contact">Get In Touch</h2>
+        <a href="mailto:lydiawdesign@gmail.com" class="footer_link">lydiawdesign@gmail.com</a>
+
+        <div class="social_list"></div>
+          <a href="https://github.com/lydiawdesign" class="fa fa-github"></a>
+          <a href="https://www.facebook.com/lydia.williamson.71" class="fa fa-facebook"></a>
+          <a href="www.linkedin.com/in/lydia-williamson" class="fa fa-linkedin"></a>
+          <a href="https://www.instagram.com/lydia.artistpage/" class="fa fa-instagram"></a>
+        </div>
+      </footer>
+  </body>
 </html>
