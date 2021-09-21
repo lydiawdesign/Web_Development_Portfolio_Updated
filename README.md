@@ -13,6 +13,13 @@ HTML, CSS, Google Fonts, & Bootstrap.
 
 ## Screenshots :
 
+Desktop:
+![homepage desktop screenshot](https://user-images.githubusercontent.com/87274229/134220396-79be391f-b861-43ce-9279-43ec7776ee59.jpg)
+
+Mobile:
+![homepage mobile screenshot](https://user-images.githubusercontent.com/87274229/134220407-79064f5b-b29d-4ba7-929c-3ecea5d10867.jpg)
+
+
 
 
 **Copyright (c)** 2021 Lydia Williamson <br />
